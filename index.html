@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okto Sistemas | ERP, Locadoras, Agendamento e Landing Pages</title>
+    <meta name="description"
+        content="Okto Sistemas: tecnologia que organiza e acelera o seu negócio. Soluções para locadoras, ERP completo, plataformas de agendamento e landing pages de alta conversão.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav id="main-nav"
+        class="fixed w-full z-50 transition-all duration-300 bg-transparent border-b border-transparent py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-2">
+                    <img src="/img/oktologo-nobackground.webp" alt="Okto"
+                        class="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(249,115,22,0.5)]">
+                    <span class="text-xl font-bold text-white">Okto Sistemas</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#solucoes"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition">Soluções</a>
+                    <a href="#beneficios"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition">Benefícios</a>
+                    <a href="#sobre" class="text-sm font-medium text-slate-300 hover:text-white transition">Sobre</a>
+                    <a href="#portfolio"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition">Portfólio</a>
+                </div>
+                <a href="#contato"
+                    class="hidden md:inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-okto-500 to-okto-700 text-white text-sm font-semibold hover:from-okto-400 hover:to-okto-600 hover:scale-105 hover:shadow-okto-500/50 transition-all shadow-lg shadow-okto-500/25">
+                    Falar com Especialista
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <button id="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Menu"
+                    class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass-dark border-t border-white/10">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#solucoes" class="block text-base font-medium text-slate-300 hover:text-white">Soluções</a>
+                <a href="#beneficios" class="block text-base font-medium text-slate-300 hover:text-white">Benefícios</a>
+                <a href="#sobre" class="block text-base font-medium text-slate-300 hover:text-white">Sobre</a>
+                <a href="#portfolio" class="block text-base font-medium text-slate-300 hover:text-white">Portfólio</a>
+                <a href="#contato"
+                    class="block w-full text-center px-6 py-3 rounded-full bg-gradient-to-r from-okto-500 to-okto-700 text-white font-semibold">Falar
+                    com Especialista</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="hero-glow"></div>
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23f97316\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="reveal active">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-okto-300 text-sm font-medium mb-6">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    Tecnologia sob medida para acelerar o seu negócio
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    A tecnologia que <span class="gradient-text">organiza, acelera</span> e aumenta o lucro da sua
+                    operação
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-400 mb-8 leading-relaxed">
+                    Software e soluções digitais completas. De ERPs robustos a sistemas para locadoras, plataformas de
+                    agendamento e landing pages de alta conversão.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contato"
+                        class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-okto-500 to-okto-700 text-white font-bold text-lg hover:from-okto-400 hover:to-okto-600 hover:scale-105 hover:shadow-okto-500/50 transition-all shadow-xl shadow-okto-500/30">
+                        Solicitar Demonstração Gratuita
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#solucoes"
+                        class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full glass text-white font-semibold text-lg hover:bg-white/10 transition">
+                        Conhecer Soluções
+                        <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <div class="mt-10 flex items-center gap-6 text-sm text-slate-400">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-okto-400"></i>
+                        Implantação guiada
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-okto-400"></i>
+                        Suporte humano
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-okto-400"></i>
+                        Sem custo escondido
+                    </div>
+                </div>
+            </div>
+            <div class="relative animate-float reveal active">
+                <div class="absolute -inset-4 bg-gradient-to-r from-okto-500/30 to-okto-700/30 rounded-3xl blur-2xl">
+                </div>
+                <div class="relative glass rounded-3xl p-6 sm:p-8 shadow-2xl">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-okto-600 flex items-center justify-center">
+                                <i data-lucide="layout-dashboard" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-white font-semibold">Dashboard Okto</p>
+                                <p class="text-xs text-slate-400">Visão em tempo real</p>
+                            </div>
+                        </div>
+                        <span
+                            class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-semibold">Online</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+                            <p class="text-slate-400 text-xs mb-1">Status do Sistema</p>
+                            <p class="text-lg font-bold text-white">Online e Seguro</p>
+                            <p class="text-emerald-400 text-xs mt-1 flex items-center gap-1"><i
+                                    data-lucide="check-circle" class="w-3 h-3"></i> Operacional</p>
+                        </div>
+                        <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+                            <p class="text-slate-400 text-xs mb-1">Performance</p>
+                            <p class="text-lg font-bold text-white">Alta Velocidade</p>
+                            <p class="text-emerald-400 text-xs mt-1 flex items-center gap-1"><i data-lucide="zap"
+                                    class="w-3 h-3"></i> Otimizado</p>
+                        </div>
+                        <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+                            <p class="text-slate-400 text-xs mb-1">Integração</p>
+                            <p class="text-lg font-bold text-white">100% Conectado</p>
+                            <p class="text-emerald-400 text-xs mt-1 flex items-center gap-1"><i data-lucide="link"
+                                    class="w-3 h-3"></i> API</p>
+                        </div>
+                        <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+                            <p class="text-slate-400 text-xs mb-1">Suporte</p>
+                            <p class="text-lg font-bold text-white">Ativo</p>
+                            <p class="text-emerald-400 text-xs mt-1 flex items-center gap-1"><i data-lucide="headphones"
+                                    class="w-3 h-3"></i> Pronta Resposta</p>
+                        </div>
+                    </div>
+                    <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                        <div class="h-full w-full bg-gradient-to-r from-okto-400 to-okto-600 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Soluções -->
+    <section id="solucoes" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <p class="text-okto-400 font-semibold mb-3">Soluções completas</p>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Um só sistema para toda a cadeia do seu
+                    negócio</h2>
+                <p class="text-lg text-slate-400">Elimine planilhas isoladas e processos manuais. A Okto conecta todas
+                    as áreas da sua empresa em uma única plataforma inteligente.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <!-- Card 1: Locadoras -->
+                <div class="glass-card rounded-2xl p-8 group reveal">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-okto-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="car" class="w-7 h-7 text-okto-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sistemas para Locadoras</h3>
+                    <p class="text-slate-400 leading-relaxed">Soluções completas para gestão de reservas, automação de
+                        contratos e processos financeiros. Check-in e check-out ágeis.</p>
+                </div>
+                <!-- Card 2: ERP -->
+                <div class="glass-card rounded-2xl p-8 group reveal">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-okto-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="database" class="w-7 h-7 text-okto-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sistemas ERP Sob Medida</h3>
+                    <p class="text-slate-400 leading-relaxed">Centralize a gestão da sua empresa com um ERP moderno,
+                        escalável e perfeitamente adaptado às regras específicas do seu negócio.</p>
+                </div>
+                <!-- Card 3: Agendamento -->
+                <div class="glass-card rounded-2xl p-8 group reveal">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-okto-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="calendar-clock" class="w-7 h-7 text-okto-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Plataformas de Agendamento</h3>
+                    <p class="text-slate-400 leading-relaxed">Sistemas robustos para clínicas, salões e serviços. Reduza
+                        faltas com lembretes automáticos via WhatsApp e E-mail.</p>
+                </div>
+                <!-- Card 4: Landing Pages -->
+                <div class="glass-card rounded-2xl p-8 group reveal">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-okto-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="layout-template" class="w-7 h-7 text-okto-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Landing Pages de Alta Conversão</h3>
+                    <p class="text-slate-400 leading-relaxed">Páginas de vendas focadas em resultados. Design premium,
+                        otimização para SEO e carregamento ultrarrápido para capturar leads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <p class="text-okto-400 font-semibold mb-3">Por que escolher a Okto?</p>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Software que entrega resultado, não
+                        apenas funcionalidade</h2>
+                    <p class="text-lg text-slate-400 mb-8">A Okto foi desenvolvida para quem precisa de agilidade,
+                        controle e escalabilidade. Nossa tecnologia remove gargalos e libera sua equipe para focar no
+                        crescimento.</p>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-okto-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="zap" class="w-4 h-4 text-okto-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-lg">Implementação rápida e segura</h4>
+                                <p class="text-slate-400">Metodologia própria que reduz o tempo de implantação e protege
+                                    seus dados históricos.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-okto-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="headphones" class="w-4 h-4 text-okto-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-lg">Suporte técnico especializado</h4>
+                                <p class="text-slate-400">Atendimento humano com especialistas que conhecem o seu
+                                    segmento e suas dores.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-okto-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="shield-check" class="w-4 h-4 text-okto-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-lg">Segurança e conformidade fiscal</h4>
+                                <p class="text-slate-400">Fique em dia com a legislação e durma tranquilo com backups,
+                                    permissões e auditoria.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-okto-500/20 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i data-lucide="smartphone" class="w-4 h-4 text-okto-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-lg">Acesso em qualquer lugar</h4>
+                                <p class="text-slate-400">Nuvem, mobilidade e integração entre escritório, pátio,
+                                    oficina e estrada.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative reveal">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-br from-okto-500/20 to-okto-700/20 rounded-3xl blur-2xl">
+                    </div>
+                    <div class="relative glass rounded-3xl p-8 border border-white/10">
+                        <div class="space-y-6">
+                            <div
+                                class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="clock" class="w-6 h-6 text-okto-400"></i>
+                                    <span class="text-white font-medium">Otimização de tempo</span>
+                                </div>
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="shield" class="w-6 h-6 text-okto-400"></i>
+                                    <span class="text-white font-medium">Segurança de Dados</span>
+                                </div>
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="trending-up" class="w-6 h-6 text-okto-400"></i>
+                                    <span class="text-white font-medium">Foco em Resultados</span>
+                                </div>
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+                            </div>
+                            <div
+                                class="flex items-center justify-between p-4 bg-white/5 rounded-xl border border-white/10">
+                                <div class="flex items-center gap-3">
+                                    <i data-lucide="smile" class="w-6 h-6 text-okto-400"></i>
+                                    <span class="text-white font-medium">Experiência do Usuário</span>
+                                </div>
+                                <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sobre / Diferenciais -->
+    <section id="sobre" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative reveal">
+                    <div
+                        class="absolute -inset-4 bg-gradient-to-tr from-okto-500/20 to-okto-700/20 rounded-3xl blur-2xl">
+                    </div>
+                    <div class="relative glass rounded-3xl p-8 border border-white/10">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center p-6 bg-white/5 rounded-2xl border border-white/10">
+                                <div class="flex justify-center mb-2"><i data-lucide="code"
+                                        class="w-8 h-8 text-okto-400"></i></div>
+                                <p class="text-white font-bold mb-1">Código Limpo</p>
+                                <p class="text-slate-400 text-sm">Alta performance</p>
+                            </div>
+                            <div class="text-center p-6 bg-white/5 rounded-2xl border border-white/10">
+                                <div class="flex justify-center mb-2"><i data-lucide="rocket"
+                                        class="w-8 h-8 text-okto-400"></i></div>
+                                <p class="text-white font-bold mb-1">Inovação</p>
+                                <p class="text-slate-400 text-sm">Soluções modernas</p>
+                            </div>
+                            <div class="text-center p-6 bg-white/5 rounded-2xl border border-white/10">
+                                <div class="flex justify-center mb-2"><i data-lucide="users"
+                                        class="w-8 h-8 text-okto-400"></i></div>
+                                <p class="text-white font-bold mb-1">Time Especializado</p>
+                                <p class="text-slate-400 text-sm">Foco no seu projeto</p>
+                            </div>
+                            <div class="text-center p-6 bg-white/5 rounded-2xl border border-white/10">
+                                <div class="flex justify-center mb-2"><i data-lucide="life-buoy"
+                                        class="w-8 h-8 text-okto-400"></i></div>
+                                <p class="text-white font-bold mb-1">Suporte Dedicado</p>
+                                <p class="text-slate-400 text-sm">Acompanhamento próximo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 reveal">
+                    <p class="text-okto-400 font-semibold mb-3">Quem somos</p>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">Transformando ideias em soluções
+                        digitais de alto impacto</h2>
+                    <p class="text-lg text-slate-400 mb-6">A Okto Sistemas nasceu da necessidade de unir tecnologia
+                        robusta ao conhecimento profundo de negócios. Cada solução do nosso portfólio foi pensada para
+                        resolver problemas reais do dia a dia.</p>
+                    <p class="text-lg text-slate-400 mb-8">Não vendemos apenas um sistema. Entregamos parceria,
+                        consultoria especializada e uma plataforma que cresce junto com o seu negócio.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contato"
+                            class="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-okto-500 to-okto-700 text-white font-semibold hover:from-okto-400 hover:to-okto-600 transition">
+                            Conheça nossa equipe
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <p class="text-okto-400 font-semibold mb-3">Nossos Casos de Sucesso</p>
+                <h2 class="text-3xl sm:text-4xl font-bold">Projetos em Destaque</h2>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Confira algumas das soluções e landing pages que
+                    desenvolvemos para nossos clientes.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <a href="#" class="group block reveal">
+                    <div
+                        class="glass-card rounded-2xl overflow-hidden h-full flex flex-col border border-white/10 hover:border-okto-500/30 transition-all duration-300 hover:-translate-y-2">
+                        <div
+                            class="aspect-video bg-slate-900 flex items-center justify-center relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-okto-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                            <i data-lucide="image"
+                                class="w-12 h-12 text-slate-700 group-hover:text-okto-400 transition-colors"></i>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950/40 backdrop-blur-sm">
+                                <span
+                                    class="px-4 py-2 bg-okto-500 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                                    Ver Projeto <i data-lucide="external-link" class="w-4 h-4"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1">
+                            <span
+                                class="text-xs font-semibold text-okto-400 tracking-wider uppercase mb-2 block">Landing
+                                Page</span>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-okto-400 transition-colors">O
+                                Castelo</h3>
+                            <p class="text-slate-400 text-sm">Página de vendas de alta conversão para locação de
+                                equipamentos de festa.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Portfolio Item 2 -->
+                <a href="#" class="group block reveal" style="transition-delay: 100ms;">
+                    <div
+                        class="glass-card rounded-2xl overflow-hidden h-full flex flex-col border border-white/10 hover:border-okto-500/30 transition-all duration-300 hover:-translate-y-2">
+                        <div
+                            class="aspect-video bg-slate-900 flex items-center justify-center relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-okto-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                            <i data-lucide="image"
+                                class="w-12 h-12 text-slate-700 group-hover:text-okto-400 transition-colors"></i>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950/40 backdrop-blur-sm">
+                                <span
+                                    class="px-4 py-2 bg-okto-500 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                                    Ver Projeto <i data-lucide="external-link" class="w-4 h-4"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1">
+                            <span
+                                class="text-xs font-semibold text-okto-400 tracking-wider uppercase mb-2 block">Landing
+                                Page</span>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-okto-400 transition-colors">
+                                Mandi Tur</h3>
+                            <p class="text-slate-400 text-sm">Página otimizada para captação rápida de clientes de
+                                transporte de vans e turismo.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Portfolio Item 3 -->
+                <a href="#" class="group block reveal" style="transition-delay: 200ms;">
+                    <div
+                        class="glass-card rounded-2xl overflow-hidden h-full flex flex-col border border-white/10 hover:border-okto-500/30 transition-all duration-300 hover:-translate-y-2">
+                        <div
+                            class="aspect-video bg-slate-900 flex items-center justify-center relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-okto-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                            <i data-lucide="image"
+                                class="w-12 h-12 text-slate-700 group-hover:text-okto-400 transition-colors"></i>
+                            <div
+                                class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950/40 backdrop-blur-sm">
+                                <span
+                                    class="px-4 py-2 bg-okto-500 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+                                    Ver Projeto <i data-lucide="external-link" class="w-4 h-4"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex-1">
+                            <span
+                                class="text-xs font-semibold text-okto-400 tracking-wider uppercase mb-2 block">Landing
+                                Page</span>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-okto-400 transition-colors">
+                                Espaço Vip</h3>
+                            <p class="text-slate-400 text-sm">Página elegante para salão de beleza, destacando serviços
+                                e agilizando agendamentos.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Principal -->
+    <section id="contato" class="py-32 relative">
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-okto-600/20 rounded-full blur-[120px] pointer-events-none -z-10">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-slate-900/70 backdrop-blur-2xl rounded-[2.5rem] p-8 sm:p-12 lg:p-16 text-center border border-white/10 shadow-[0_0_80px_-15px_rgba(249,115,22,0.25)] reveal">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-okto-500/10 text-okto-400 text-sm font-semibold mb-8 border border-okto-500/20">
+                    <i data-lucide="zap" class="w-4 h-4"></i>
+                    Fale com um Especialista
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-6 tracking-tight">Pronto para transformar
+                    seu negócio?</h2>
+                <p class="text-lg text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                    Agende uma demonstração gratuita. Sem compromisso, apenas uma conversa focada em resolver os
+                    desafios da sua operação.
+                </p>
+                <div class="flex justify-center mt-8">
+                    <a href="https://api.whatsapp.com/send/?phone=5542988266592&text=Olá%21+Gostaria+de+fazer+um+orçamento+com+a+Okto+Sistemas.&type=phone_number&app_absent=0"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-2xl bg-emerald-500 text-white font-bold text-xl hover:bg-emerald-400 hover:shadow-[0_0_40px_rgba(16,185,129,0.4)] hover:-translate-y-1 transition-all duration-300 group">
+                        <i data-lucide="message-circle" class="w-7 h-7"></i>
+                        Falar agora pelo WhatsApp
+                        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+                <p class="text-sm text-slate-500 text-center mt-6 flex items-center justify-center gap-2">
+                    <i data-lucide="clock" class="w-4 h-4"></i> Resposta rápida e atendimento humano.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <p class="text-okto-400 font-semibold mb-3">Dúvidas frequentes</p>
+                <h2 class="text-3xl sm:text-4xl font-bold">Tire suas dúvidas</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="glass rounded-xl p-6 reveal">
+                    <h3 class="text-white font-semibold mb-2 flex items-center gap-3">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-okto-400"></i>
+                        A Okto é adequada para o meu porte de empresa?
+                    </h3>
+                    <p class="text-slate-400">Sim. Atendemos desde pequenas oficinas e transportadoras regionais até
+                        grandes grupos de concessionárias. A solução é modular e escalável.</p>
+                </div>
+                <div class="glass rounded-xl p-6 reveal">
+                    <h3 class="text-white font-semibold mb-2 flex items-center gap-3">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-okto-400"></i>
+                        Quanto tempo leva a implantação?
+                    </h3>
+                    <p class="text-slate-400">O prazo varia conforme a complexidade, mas nossa metodologia é ágil. A
+                        maioria dos projetos inicia a operação em poucas semanas.</p>
+                </div>
+                <div class="glass rounded-xl p-6 reveal">
+                    <h3 class="text-white font-semibold mb-2 flex items-center gap-3">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-okto-400"></i>
+                        Posso migrar meus dados do sistema atual?
+                    </h3>
+                    <p class="text-slate-400">Sim. Nossa equipe realiza a migração de dados históricos de forma segura e
+                        validada, minimizando impactos na operação.</p>
+                </div>
+                <div class="glass rounded-xl p-6 reveal">
+                    <h3 class="text-white font-semibold mb-2 flex items-center gap-3">
+                        <i data-lucide="help-circle" class="w-5 h-5 text-okto-400"></i>
+                        O suporte é realmente humano?
+                    </h3>
+                    <p class="text-slate-400">Sim. Nosso suporte técnico é atendido por especialistas que conhecem
+                        profundamente o software e o seu segmento de atuação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="/img/oktologo-nobackground.webp" alt="Okto"
+                            class="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(249,115,22,0.5)]">
+                        <span class="text-xl font-bold text-white">Okto Sistemas</span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm mb-6">Orquestração inteligente e soluções digitais de alta
+                        performance para empresas que não param.</p>
+                    <div class="flex mt-2">
+                        <a href="https://links.oktosistemas.com.br" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl glass hover:bg-white/10 text-slate-300 hover:text-white transition group">
+                            <i data-lucide="link"
+                                class="w-4 h-4 text-okto-400 group-hover:scale-110 transition-transform"></i>
+                            <span class="font-medium text-sm">Nossos Links</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Soluções</h4>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li><a href="#solucoes" class="hover:text-okto-400 transition">Sistemas para Locadoras</a></li>
+                        <li><a href="#solucoes" class="hover:text-okto-400 transition">Sistemas ERP</a></li>
+                        <li><a href="#solucoes" class="hover:text-okto-400 transition">Agendamento</a></li>
+                        <li><a href="#solucoes" class="hover:text-okto-400 transition">Landing Pages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-3 text-slate-400 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-okto-400"></i>
+                            42 98826-6592</li>
+                        <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-okto-400"></i>
+                            contato@oktosistemas.com.br</li>
+                        <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-okto-400"></i>
+                            Irati, PR</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-sm">© 2026 Okto Sistemas. Todos os direitos reservados.</p>
+                <div class="flex gap-6 text-sm text-slate-500">
+                    <a href="#" class="hover:text-slate-300 transition">Política de Privacidade</a>
+                    <a href="#" class="hover:text-slate-300 transition">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
