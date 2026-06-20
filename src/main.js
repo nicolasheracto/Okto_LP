@@ -10,6 +10,18 @@ createIcons({
 // Menu Toggle
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
+const nav = document.getElementById('main-nav');
+
+function updateNavBackground() {
+  const isMenuOpen = mobileMenu && !mobileMenu.classList.contains('hidden');
+  if (window.scrollY > 20 || isMenuOpen) {
+    nav.classList.add('glass-dark', 'border-white/10', 'py-0', 'shadow-lg');
+    nav.classList.remove('bg-transparent', 'border-transparent', 'py-2');
+  } else {
+    nav.classList.remove('glass-dark', 'border-white/10', 'py-0', 'shadow-lg');
+    nav.classList.add('bg-transparent', 'border-transparent', 'py-2');
+  }
+}
 
 if (mobileMenuBtn && mobileMenu) {
   mobileMenuBtn.addEventListener('click', () => {
@@ -21,20 +33,12 @@ if (mobileMenuBtn && mobileMenu) {
       mobileMenu.classList.add('hidden');
       mobileMenuBtn.setAttribute('aria-expanded', 'false');
     }
+    updateNavBackground();
   });
 }
 
 // Navbar Scroll
-const nav = document.getElementById('main-nav');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 20) {
-    nav.classList.add('glass-dark', 'border-white/10', 'py-0', 'shadow-lg');
-    nav.classList.remove('bg-transparent', 'border-transparent', 'py-2');
-  } else {
-    nav.classList.remove('glass-dark', 'border-white/10', 'py-0', 'shadow-lg');
-    nav.classList.add('bg-transparent', 'border-transparent', 'py-2');
-  }
-});
+window.addEventListener('scroll', updateNavBackground);
 
 // Intersection Observer (Reveal animations)
 const observerOptions = {
