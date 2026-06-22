@@ -1,9 +1,9 @@
-import { createIcons, ArrowRight, Menu, Sparkles, ChevronDown, CheckCircle, LayoutDashboard, Zap, Link as LinkIcon, Headphones, Car, Database, CalendarClock, LayoutTemplate, ShieldCheck, Smartphone, Clock, Shield, TrendingUp, Smile, Code, Rocket, Users, LifeBuoy, Image as ImageIcon, ExternalLink, MessageCircle, HelpCircle, Phone, Mail, MapPin, Check } from 'lucide';
+import { createIcons, ArrowRight, Menu, Sparkles, ChevronDown, CheckCircle, LayoutDashboard, Zap, Link as LinkIcon, Headphones, Car, Database, CalendarClock, LayoutTemplate, ShieldCheck, Smartphone, Clock, Shield, TrendingUp, Smile, Code, Rocket, Users, LifeBuoy, Image as ImageIcon, ExternalLink, MessageCircle, HelpCircle, Phone, Mail, MapPin, Check, Sun, Moon } from 'lucide';
 
 // Inicializar ícones
 createIcons({
   icons: {
-    ArrowRight, Menu, Sparkles, ChevronDown, CheckCircle, LayoutDashboard, Zap, Link: LinkIcon, Headphones, Car, Database, CalendarClock, LayoutTemplate, ShieldCheck, Smartphone, Clock, Shield, TrendingUp, Smile, Code, Rocket, Users, LifeBuoy, Image: ImageIcon, ExternalLink, MessageCircle, HelpCircle, Phone, Mail, MapPin, Check
+    ArrowRight, Menu, Sparkles, ChevronDown, CheckCircle, LayoutDashboard, Zap, Link: LinkIcon, Headphones, Car, Database, CalendarClock, LayoutTemplate, ShieldCheck, Smartphone, Clock, Shield, TrendingUp, Smile, Code, Rocket, Users, LifeBuoy, Image: ImageIcon, ExternalLink, MessageCircle, HelpCircle, Phone, Mail, MapPin, Check, Sun, Moon
   }
 });
 
@@ -72,5 +72,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         mobileMenuBtn.setAttribute('aria-expanded', 'false');
       }
     }
+  });
+});
+
+// Theme Toggle Logic
+const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
+const htmlElement = document.documentElement;
+
+function setTheme(isDark) {
+  if (isDark) {
+    htmlElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    htmlElement.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+// Initial check
+const savedTheme = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+  setTheme(true);
+} else {
+  setTheme(false);
+}
+
+// Event Listeners for Theme Toggle Buttons
+themeToggleBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isDark = htmlElement.classList.contains('dark');
+    setTheme(!isDark);
   });
 });
